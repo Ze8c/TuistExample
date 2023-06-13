@@ -29,7 +29,7 @@ extension AppTarget {
         }
     }
     
-    private var dependencies: [Depend] {
+    private var dependencies: [AppDependencie] {
         switch self {
 
         case .main:
@@ -75,10 +75,6 @@ extension AppTarget {
                 "UILaunchStoryboardName": "LaunchScreen",
                 "CFBundleIconName": "AppIcon",
                 "CFBundleDisplayName": "TestName",
-                "NSCameraUsageDescription": "Need for video conference.",
-                "NSFaceIDUsageDescription": "Unlock your data using Face ID",
-                "NSMicrophoneUsageDescription": "Usage for video/audio calls",
-                "NSPhotoLibraryUsageDescription": "Load photos of your meals to track your diet.",
                 "UISupportedInterfaceOrientations": ["UIInterfaceOrientationPortrait"],
                 "UISupportedInterfaceOrientations~ipad": ["UIInterfaceOrientationPortrait", "UIInterfaceOrientationPortraitUpsideDown"],
                 "UIUserInterfaceStyle": "Light",

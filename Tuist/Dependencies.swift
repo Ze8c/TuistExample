@@ -1,7 +1,7 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
 
-let packageManager = SwiftPackageManagerDependencies(dependencies: [.kingfisher])
+let packageManager = SwiftPackageManagerDependencies(dependencies: ExternalDependencie.allCases)
 
 let dependencies = Dependencies(
     swiftPackageManager: packageManager,
@@ -9,7 +9,7 @@ let dependencies = Dependencies(
 )
 
 extension SwiftPackageManagerDependencies {
-    init(dependencies: [AppDependencie]) {
+    init(dependencies: [ExternalDependencie]) {
         self.init(dependencies.map(\.package))
     }
 }
